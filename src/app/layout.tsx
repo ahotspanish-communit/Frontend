@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+
+import Footer from '@/shared/ui/footer/Footer'
 import './globals.css'
 import { Toaster } from '@/shared/ui/sonner'
 
@@ -14,17 +16,20 @@ const pretendard = localFont({
   variable: '--font-pretendard',
 })
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode
-}>) {
+}>) => {
   return (
     <html lang="ko" className={`${pretendard.variable} antialiased`}>
-      <body>
-        <main>{children}</main>
+      <body className="flex min-h-screen flex-col">
+        <main className="flex-1">{children}</main>
         <Toaster position="top-right" duration={1500} />
+        <Footer />
       </body>
     </html>
   )
 }
+
+export default RootLayout
