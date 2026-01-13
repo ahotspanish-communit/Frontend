@@ -52,9 +52,9 @@
   --color-brand-violet-light: #f0e5ff; /* 어드민 뱃지 배경 */
   --color-brand-green: #34c759; /* 사용자, 모든 초록색 */
   --color-brand-green-light: #e5ffe9; /* 사용자 뱃지 배경 */
-  --color-brand-blue: #0066ff; /* 강사 */
+  --color-brand-blue: #0066ff; /* 강사, 모든 진한 파란색*/
   --color-brand-blue-sub: #def0ff; /* 버튼 텍스트 */
-  --color-brand-blue: #0066ff; /* 강사 */
+  --color-brand-blue-light: #eff8ff; /* 강사 뱃지 배경, 버튼 */
   --color-brand-black: #000000; /* 모든 검은색 */
   --color-brand-white: #ffffff; /* 모든 하얀색 */
   --color-brand-gray-100: #f1f0f0; /* 모든 배경 회색 */
