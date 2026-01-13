@@ -63,7 +63,7 @@
   --color-brand-gray-400: #887979; /* 덜 진한 텍스트 */
   --color-brand-gray-500: #625757; /* 가장 진한 텍스트 */
 
-  --color-brand-error: oklch(0.637 0.237 25.331); /* 토스트 에러 아이콘 */
+  --color-brand-error: #ff383c; /* 토스트 에러 아이콘, 오답 텍스트 */
   --color-brand-warning: oklch(0.769 0.188 70.08); /* 토스트 경고 아이콘 */
 
   --radius-brand-sm: 8px;
