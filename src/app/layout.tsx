@@ -23,8 +23,8 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="ko" className={`${pretendard.variable} antialiased`}>
-      <body>
-        <main>{children}</main>
+      <body className="flex min-h-screen flex-col">
+        <main className="flex-1">{children}</main>
         <Toaster position="top-right" duration={1500} />
         <Footer />
       </body>
