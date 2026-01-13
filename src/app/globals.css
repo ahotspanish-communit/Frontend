@@ -52,9 +52,9 @@
   --color-brand-violet-light: #f0e5ff; /* 어드민 뱃지 배경 */
   --color-brand-green: #34c759; /* 사용자, 모든 초록색 */
   --color-brand-green-light: #e5ffe9; /* 사용자 뱃지 배경 */
-  --color-brand-blue: #0066ff; /* 강사 */
+  --color-brand-blue: #0066ff; /* 강사, 모든 진한 파란색*/
   --color-brand-blue-sub: #def0ff; /* 버튼 텍스트 */
-  --color-brand-blue: #0066ff; /* 강사 */
+  --color-brand-blue-light: #eff8ff; /* 강사 뱃지 배경, 버튼 */
   --color-brand-black: #000000; /* 모든 검은색 */
   --color-brand-white: #ffffff; /* 모든 하얀색 */
   --color-brand-gray-100: #f1f0f0; /* 모든 배경 회색 */
@@ -63,7 +63,7 @@
   --color-brand-gray-400: #887979; /* 덜 진한 텍스트 */
   --color-brand-gray-500: #625757; /* 가장 진한 텍스트 */
 
-  --color-brand-error: oklch(0.637 0.237 25.331); /* 토스트 에러 아이콘 */
+  --color-brand-error: #ff383c; /* 토스트 에러 아이콘, 오답 텍스트 */
   --color-brand-warning: oklch(0.769 0.188 70.08); /* 토스트 경고 아이콘 */
 
   --radius-brand-sm: 8px;
