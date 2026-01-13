@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+import Footer from '@/shared/ui/footer/Footer'
 import './globals.css'
 import { Toaster } from '@/shared/ui/sonner'
 
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body>
         <main>{children}</main>
         <Toaster position="top-right" duration={1500} />
+        <Footer />
       </body>
     </html>
   )
