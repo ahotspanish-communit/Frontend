@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
+import { Toaster } from '@/shared/ui/sonner'
 
 export const metadata: Metadata = {
   title: 'StudiGo',
@@ -20,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${pretendard.variable} antialiased`}>
-      <body>{children}</body>
+      <body>
+        <main>{children}</main>
+        <Toaster position="top-right" duration={1500} />
+      </body>
     </html>
   )
 }
