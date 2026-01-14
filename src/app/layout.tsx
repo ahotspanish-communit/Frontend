@@ -1,10 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-
-import Header from '@/shared/ui/header/Header'
-import Footer from '@/shared/ui/footer/Footer'
 import './globals.css'
-import { Toaster } from '@/shared/ui/Toaster'
+import { Footer, Toaster, Header } from '@/shared/ui'
 
 export const metadata: Metadata = {
   title: 'StudiGo',
@@ -27,8 +24,8 @@ const RootLayout = ({
       <body className="font-pretendard flex min-h-screen flex-col">
         <Header />
         <main className="flex-1">{children}</main>
-        <Toaster position="top-right" duration={1500} />
         <Footer />
+        <Toaster position="top-right" duration={1500} />
       </body>
     </html>
   )

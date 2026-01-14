@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/shared/lib/cn'
-import HeaderDropdownMenu from './HeaderDropdownMenu'
+import HeaderDropdownMenu from '@/shared/ui/header/HeaderDropdownMenu'
 
 const navItems = [
   { name: '커뮤니티', href: '/' },

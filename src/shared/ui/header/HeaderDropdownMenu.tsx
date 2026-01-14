@@ -17,14 +17,14 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/shared/ui/dropdown-menu'
-import { Avatar, AvatarImage, AvatarFallback } from '@/shared/ui/avatar'
+} from '@/shared/ui/DropdownMenu'
+import { Avatar, AvatarImage, AvatarFallback } from '@/shared/ui/Avatar'
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/shared/ui/accordion'
+} from '@/shared/ui/Accordion'
 
 export const HeaderDropdownMenu = () => (
   <div className="flex items-center">
