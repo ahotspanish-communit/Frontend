@@ -52,7 +52,6 @@ function DialogContent({
   maxWidthClassName,
   ...props
 }: React.ComponentProps<typeof DialogPrimitive.Content> & {
-  showCloseButton?: boolean
   maxWidthClassName: string
 }) {
   return (
@@ -94,16 +93,6 @@ function DialogHeader({
   )
 }
 
-function DialogFooter({ className, ...props }: React.ComponentProps<'div'>) {
-  return (
-    <div
-      data-slot="dialog-footer"
-      className={cn('flex items-center justify-center gap-2.5', className)}
-      {...props}
-    />
-  )
-}
-
 function DialogTitle({
   className,
   ...props
@@ -115,19 +104,6 @@ function DialogTitle({
         'text-start text-base leading-none font-semibold',
         className
       )}
-      {...props}
-    />
-  )
-}
-
-function DialogDescription({
-  className,
-  ...props
-}: React.ComponentProps<typeof DialogPrimitive.Description>) {
-  return (
-    <DialogPrimitive.Description
-      data-slot="dialog-description"
-      className={cn('text-muted-foreground text-sm', className)}
       {...props}
     />
   )
