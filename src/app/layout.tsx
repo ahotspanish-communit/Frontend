@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 
+import Header from '@/shared/ui/header/Header'
 import Footer from '@/shared/ui/footer/Footer'
 import './globals.css'
 import { Toaster } from '@/shared/ui/sonner'
@@ -23,7 +24,8 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="ko" className={`${pretendard.variable} antialiased`}>
-      <body className="flex min-h-screen flex-col">
+      <body className="font-pretendard flex min-h-screen flex-col">
+        <Header />
         <main className="flex-1">{children}</main>
         <Toaster position="top-right" duration={1500} />
         <Footer />
