@@ -25,7 +25,7 @@ const Footer = () => {
 
             <div className="space-y-2 pt-5">
               <p>대표 번호 : 070 - 1234 - 5678</p>
-              <p>이메일 : studigo@linkberse.com</p>
+              <p>이메일 : studigo@linkverse.com</p>
               <p>개인정보책임자 : 스튜디고 스페인어</p>
             </div>
           </div>
