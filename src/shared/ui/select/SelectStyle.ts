@@ -8,14 +8,14 @@ export const TRIGGER_SIZE_CLASS: Record<SelectSize, string> = {
 export const TRIGGER_BASE_CLASS = `
   flex items-center whitespace-nowrap select-none
   text-sm
-  rounded-md border
+  rounded-brand-base border
   bg-brand-white border-brand-gray-200 text-brand-gray-500
   outline-none focus-visible:ring-0 focus-visible:border-brand-gray-300
   disabled:cursor-not-allowed disabled:opacity-50
 `
 
 export const CONTENT_BASE_CLASS = `
-  relative z-50 overflow-hidden rounded-md border shadow-md
+  relative z-50 overflow-hidden rounded-brand-base border shadow-brand-md
   bg-brand-white border-brand-gray-200 text-brand-gray-500
   max-h-60 overflow-y-auto
   data-[state=open]:animate-in data-[state=closed]:animate-out
@@ -26,7 +26,7 @@ export const CONTENT_BASE_CLASS = `
 `
 
 export const ITEM_BASE_CLASS = `
-  relative flex w-full cursor-default select-none items-center rounded-sm
+  relative flex w-full cursor-default select-none items-center rounded-brand-sm
   py-2 pl-3 pr-8 text-sm
   data-[disabled]:pointer-events-none data-[disabled]:opacity-50
   focus:bg-brand-gray-100 focus:text-brand-gray-500
