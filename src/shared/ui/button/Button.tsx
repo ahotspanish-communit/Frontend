@@ -12,7 +12,7 @@ import { cn } from '@/shared/lib/cn'
  * - Revoke: 취소하거나 해제하는 보조 액션 (Outline)
  */
 const buttonVariants = cva(
-  'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-brand-base transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50',
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-brand-base text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
   {
     variants: {
       variant: {
@@ -37,18 +37,24 @@ const buttonVariants = cva(
   }
 )
 
+/**
+ * shadcn v4의 타입 정의 방식 적용
+ * interface를 사용하면서 React.ComponentProps<'button'>을 확장
+ */
 export interface ButtonProps
-  extends
-    React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
+  extends React.ComponentProps<'button'>, VariantProps<typeof buttonVariants> {
   asChild?: boolean
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : 'button'
+
     return (
       <Comp
+        data-slot="button"
+        data-variant={variant}
+        data-size={size}
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
