@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import {
-  ChevronDownIcon,
   HeartIcon,
   HistoryIcon,
   HomeIcon,
@@ -47,8 +46,8 @@ export const HeaderDropdownMenu = () => (
           </Avatar>
           <div className="flex flex-col">
             <span className="text-brand-black text-sm font-bold">Fortes42</span>
-            <span className="text-brand-gray-300 text-[11px]">
-              forteslv42@gmail.com
+            <span className="text-brand-gray-300 text-xs">
+              fortes42ex@gmail.com
             </span>
           </div>
         </div>
@@ -64,7 +63,7 @@ export const HeaderDropdownMenu = () => (
               href="/mypage"
               className="text-brand-gray-500 flex w-full items-center gap-3 py-2"
             >
-              <HomeIcon className="h-4 w-4" />{' '}
+              <HomeIcon className="h-4 w-4" />
               <span className="text-sm">마이페이지로 이동</span>
             </Link>
           </DropdownMenuItem>

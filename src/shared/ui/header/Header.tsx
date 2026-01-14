@@ -5,13 +5,13 @@ import { usePathname } from 'next/navigation'
 import { cn } from '@/shared/lib/cn'
 import HeaderDropdownMenu from './HeaderDropdownMenu'
 
+const navItems = [
+  { name: '커뮤니티', href: '/' },
+  { name: '실시간 채팅', href: '/chat' },
+]
+
 const Header = () => {
   const pathname = usePathname()
-
-  const navItems = [
-    { name: '커뮤니티', href: '/' },
-    { name: '실시간 채팅', href: '/chat' },
-  ]
 
   return (
     <header className="border-brand-gray-100 bg-brand-white sticky top-0 z-50 flex h-16 w-full items-center justify-between border-b px-6">
