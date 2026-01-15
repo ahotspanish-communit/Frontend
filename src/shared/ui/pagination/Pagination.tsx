@@ -4,10 +4,12 @@ import * as React from 'react'
 import { cn } from '@/shared/lib/cn'
 import { Button } from '@/shared/ui/button/Button'
 
-import DoubleLeftIcon from '@/shared/ui/pagination/paginationIcon/DoubleLeftIcon.svg'
-import LeftIcon from '@/shared/ui/pagination/paginationIcon/LeftIcon.svg'
-import RightIcon from '@/shared/ui/pagination/paginationIcon/RightIcon.svg'
-import DoubleRightIcon from '@/shared/ui/pagination/paginationIcon/DoubleRightIcon.svg'
+import {
+  DoubleLeftIcon,
+  LeftIcon,
+  RightIcon,
+  DoubleRightIcon,
+} from '@/shared/ui/pagination/paginationIcon'
 
 interface PaginationBarProps {
   page: number
