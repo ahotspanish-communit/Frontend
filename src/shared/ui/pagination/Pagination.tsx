@@ -144,3 +144,5 @@ export const PaginationBar = ({
     </nav>
   )
 }
+
+export default PaginationBar
